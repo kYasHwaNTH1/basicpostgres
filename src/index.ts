@@ -5,7 +5,7 @@ const app = express();
 app.use(express.json());
 
 // Update the connection string with valid credentials
-const client = new Client("postgresql://neondb_owner:Az2FvG7PUpXf@ep-late-block-a5umhtj8.us-east-2.aws.neon.tech/neondb?sslmode=require");
+const client = new Client("");
 
 async function main() {
     await client.connect().then(() => console.log("DB connected"));
